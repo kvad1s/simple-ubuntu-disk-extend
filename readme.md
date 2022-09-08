@@ -24,7 +24,10 @@ where '/dev/sda' your storage device, '3' - used partition
 ## 6) Resize ext4 file system 
 `resize2fs /dev/sda3`
 
-## 7) Extend ubuntu-vg LVM group 
-`sudo vgextend ubuntu-vg /dev/vdb`
+## 7) Extend ubuntu-vg LVM 
+`sudo lvm lvextend -l +100%FREE /dev/ubuntu-vg/ubuntu-lv`
+
+## 8) Extend ubuntu-vg LVM 
+`sudo resize2fs -p /dev/mapper/ubuntu--vg-ubuntu--lv`
 
 Thanks for attention! 
