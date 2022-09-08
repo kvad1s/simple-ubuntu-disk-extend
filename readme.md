@@ -5,7 +5,7 @@
 - Ubuntu use LVM for default to storing data and after expanding your VM size in VMWare/Hyper-V/KVM your discs does not size automatically. For this we need to extend our partition with free additional space and expand LVM.
 
 ## 1) Expand virtual disk of your VM
-./screenshot
+./screenshot.png
 
 ## 2) Login in your VM using SSH (or any diffrent method) and after login execute
 `sudo su`
